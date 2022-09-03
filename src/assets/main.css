@@ -1,0 +1,44 @@
+@import "./base.css";
+
+body {
+  --body-width: calc(100vw - 36px);
+  --font-size: calc(10px + 1vw);
+}
+
+@media (min-width: 550px) {
+  body {
+    --body-width: calc(330px + 33vw);
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    --body-width: 660px;
+    --font-size: 20px;
+  }
+}
+
+#app {
+  max-width: 1440px;
+  width: var(--body-width);
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/* TODO Set up a typography class */
+p {
+  font-size: var(--font-size);
+  transition: 0.4s;
+}
+
+a {
+  text-decoration: none;
+  color: hsla(346, 53%, 49%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(346, 53%, 49%, 0.15);
+  }
+}
