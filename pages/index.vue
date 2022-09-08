@@ -1,5 +1,4 @@
 <template lang="pug">
 .index
-  h1 Test
-  p test
+  h1 Welcome
 </template>
